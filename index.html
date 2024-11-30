@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing</title>
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="./images/logo_2.png" alt="3d ptint omsk logo">
+                <a class="header-font" href="#">Skeletolik</a>
+            </div>
+            <div class="header-menu">
+                <nav class="nav-bar">
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li>
+                            <a class="header-font" href="#index">Главная</a>
+                        </li>
+                        <li>
+                            <a class="header-font" href="#about">О нас</a> 
+                        </li>
+                        <li>
+                            <a class="header-font" href="#gallery">Галерея</a>
+                        </li>
+                        <li>
+                            <a class="header-font" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-links">
+                <ul>
+                    <li>
+                        <a href="https://vk.com" target="_blank">
+                            <img src="./images/logo_vk_2.png" alt="#">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="./images/logo_instagram_2.png" alt="#">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ok.ru" target="_blank">
+                            <img src="./images/logo_odnoklassniki_2.png" alt="#">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-body">
+        <div class="top-picture" id="index">
+            <div class="top-content">
+                <p>3D Печать Омск</p>
+            </div>
+
+        </div>
+        <div class="main-body">
+            <div class="main-title">
+                <h1 class="main-title-text" id="about">О нас</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt repellendus illum! Odit ex, eos assumenda saepe ratione nemo excepturi sed provident voluptatum in eum pariatur libero itaque? Neque, itaque? WordPerfect Office — Get support for your daily tasks with this powerful, intuitive word processing software. Maintain productivity with this all-in-one suite of applications that gets the job done.</p>
+            </div>
+        </div>
+        <div class="title" id="gallery"><h2>Галерея</h2></div>
+        <div class="grid-galleria">
+            <div><img src="./images/1.jpg" alt="#" class="grid-image" data-index="0">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptatem corrupti odit delectus repellendus dolorem at distinctio aliquam. Minima eaque consequuntur architecto sit saepe illo quos nobis dolorum dignissimos earum!</p>
+            </div>
+            <div><img src="./images/top-picture.jpg" alt="#" class="grid-image" data-index="1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptatem corrupti odit delectus repellendus dolorem at distinctio aliquam. Minima eaque consequuntur architecto sit saepe illo quos nobis dolorum dignissimos earum!</p>
+            </div>
+            <div><img src="./images/2.jpg" alt="#" class="grid-image" data-index="2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptatem corrupti odit delectus repellendus dolorem at distinctio aliquam. Minima eaque consequuntur architecto sit saepe illo quos nobis dolorum dignissimos earum!</p>
+            </div>
+            <div><img src="./images/top-picture.jpg" alt="#" class="grid-image" data-index="3">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptatem corrupti odit delectus repellendus dolorem at distinctio aliquam. Minima eaque consequuntur architecto sit saepe illo quos nobis dolorum dignissimos earum!</p>
+            </div>
+            <div><img src="./images/top-picture.jpg" alt="#" class="grid-image" data-index="4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptatem corrupti odit delectus repellendus dolorem at distinctio aliquam. Minima eaque consequuntur architecto sit saepe illo quos nobis dolorum dignissimos earum!</p>
+            </div>
+            <div><img src="./images/3.jpg" alt="#" class="grid-image" data-index="5">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo voluptatem corrupti odit delectus repellendus dolorem at distinctio aliquam. Minima eaque consequuntur architecto sit saepe illo quos nobis dolorum dignissimos earum!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi alias, porro in quaerat officia modi rerum quia eveniet repudiandae veritatis! Saepe neque similique doloribus accusantium quisquam nemo atque ex eos?</p>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="clickable-area left-area" id="leftArea"></div>
+            <div class="clickable-area right-area" id="rightArea"></div>
+            <span class="close" id="close">&times;</span>
+            <span class="prev" id="prev">&#10094;</span>
+            <span class="next" id="next">&#10095;</span>
+            <img class="modal-content" id="modal-image">
+        </div>
+        <div class="footer" id="contacts">
+            <div class="title">
+                <h2>Контактная информация</h2>
+            </div>
+            <div class="contacts">
+                <a href="tel:+79011111111">Телефон для связи</a>
+            </div>
+            <div class="contacts">
+                <a href="mailto:example@example.com">E-mail</a>
+            </div>
+            <div>
+                <p>@ Skeletolik</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
