@@ -1,20 +1,24 @@
 name: Deploy GitHub Pages
 
+# Событие, запускающее workflow
 on:
   push:
     branches:
-      - main # Запускается при коммитах в ветку main
+      - main # Запускается, если изменения происходят в ветке main
 
+# Описание работы
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Среда выполнения workflow
 
     steps:
+      # Клонирование кода из текущего репозитория
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Сборка и публикация сайта
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: . # Укажите корневую папку с вашим сайтом
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Используем встроенный токен GitHub
+          publish_dir: . # Папка, в которой лежат файлы сайта
